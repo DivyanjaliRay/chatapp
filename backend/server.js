@@ -10,11 +10,10 @@ import userRoutes from "./routes/userroutes.js";
 
 import connectMongoDB from "./db/connectMongoDB.js";
 //import Message from "./models/messagemodel.js";
-
+dotenv.config();
 const app=express();
 const PORT =process.env.PORT || 8000;
 
-dotenv.config();
 
 app.use(express.json());
 
